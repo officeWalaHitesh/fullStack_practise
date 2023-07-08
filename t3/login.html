@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <header>
+        <img src="quantum screen assets\icons\logo used in header.svg" alt="Logo">
+
+    </header>
+    <div class="frm">
+        <div class="inn">
+            <div class="top">
+                <img src="quantum screen assets\icons\back.svg" alt="">
+                <h2>Log in with Quantum</h2>
+            </div>
+            <form action="">
+                <div class="radio_but">
+                    <label class="cursor_pointer">
+                        <input id="radio_button_1" type="radio" name="option" value="District" checked> District
+                    </label>
+                    <label class="cursor_pointer">
+                        <input id="radio_button_2" type="radio" name="option" value="independent school"> Independent
+                        school
+                    </label>
+                </div>
+
+                <span>State*</span>
+
+                <select name="state" id="state" class="state cursor_pointer" required>
+                    <option value="alabama">Alabama</option>
+                    <option value="dave">Dave</option>
+                    <option value="pumpernickel">Pumpernickel</option>
+                    <option value="reeses">Reeses</option>
+                </select>
+
+                <span>District*</span>
+                <br>
+                <select name="state" id="state" class="district cursor_pointer" required>
+                    <option value="alabama">Alabama School District</option>
+                    <option value="dave">Dave</option>
+                    <option value="pumpernickel">Pumpernickel</option>
+                    <option value="reeses">Reeses</option>
+                </select>
+                <input class="user" type="text" placeholder="Username/Email ID*" required>
+                <h3>FORGOT USERNAME?</h3>
+                <input class="pass" type="password" placeholder="Password*" required>
+                <h3>
+                    FORGOT PASSWORD?
+                </h3>
+                <label for="checkbox1" class="checkbox-label cursor_pointer">
+                    <input type="checkbox" id="checkbox1" class="checkbox cursor_pointer" checked>
+                    Remember Me
+                </label>
+
+                <br>
+                <a href="index.html">
+                    <button type="submit" class="submit cursor_pointer">LOG IN</button>
+                </a>
+            </form>
+        </div>
+        <div class="info">
+            <h4>About</h4>
+            <div class="vertical"></div>
+            <h4>Contact Us</h4>
+        </div>
+    </div>
+    <footer>
+
+
+        <img src="quantum screen assets\icons\logo used in footer.svg" alt="">
+        <div class="vertical"></div>
+        <div>
+            <span>Copyright &copy; 2020-2021 Zeus Systems Pvt. Ltd. All rights reserved.</span>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
