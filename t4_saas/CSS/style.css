@@ -151,7 +151,7 @@ header .header-right a .profile {
     display: none;
   }
   .middle {
-    width: 90%;
+    width: 50% !important;
     margin: 2% 5%;
     display: flex;
     flex-direction: column;
