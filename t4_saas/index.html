@@ -5,234 +5,260 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teacher Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS\style.css">
 </head>
 
 <body>
-    <div class="header">
-        <a href="#default" class="logo">
+    <header>
+        <div href="#default" class="logo">
             <img src="quantum screen assets\icons\logo used in header.svg" alt="Logo">
-        </a>
+        </div>
         <div class="header-right">
-            <a class="content active" href="#dash">DASHBOARD</a>
-            <a class="content" href="#content">Content</a>
-            <a class="content" href="#users">users</a>
-            <a class="content" href="reports">reports</a>
-            <a class="content" href="admin">admin</a>
-            <a href="alerts"><img class="noti" src="icons\alerts.svg" alt=""></a>
-            <a href="announce"><img class="noti" src="icons\announcements.svg" alt=""></a>
-            <a href="preview"><img class="profile" src="images\imageMask-1.png" alt=""></a>
+            <a class="content sm active" href="#dash">DASHBOARD</a>
+            <a class="content sm" href="#content">Content</a>
+            <a class="content sm" href="#users">users</a>
+            <a class="content sm" href="reports">reports</a>
+            <a class="content sm" href="admin">admin</a>
+
+            <a href="#" class="notification">
+                <span><img src="icons\alerts.svg" alt=""></span>
+                <span class="badge">2</span>
+            </a>
+
+            <a href="#" class="notification_icon">
+                <span><img src="icons\announcements.svg" alt=""></span>
+                <span class="badge">1</span>
+            </a>
+
+            <div>
+                <a href="preview" class="notify_img">
+                    <span><img class="profile" src="images\imageMask-1.png" alt=""></span>
+                    <span class="badge">T</span>
+                </a>
+            </div>
+            <div class="hamburger">
+                <img src="/t4_saas/icons/hamburger-menu.svg" alt="hamburger">
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="course">
+            <img style="padding-right: 5px;" src="icons\courses.svg" alt="">
+            <div class="range"> <b>4</b> Courses</div>
+        </div>
+        <div class="course">
+            <img style="padding-right: 5px;" src="icons\classes.svg" alt="">
+            <div class="range"> <b>4</b> Classes </div>
+
         </div>
     </div>
-    <div class="frm">
-        <div class="container">
-            <button class="fs">
-            <div class="first">
-                <img style="padding-right: 5px;" src="icons\courses.svg" alt="">
-                <div class="range"> <b>4</b> Courses</div>
+    <div class="outer_course">
+        <div class="left_c"> <span> Showing 4 of 4 courses </span></div>
+        <div class="show_course">
+            <div>
+                <span>Sort By: </span>
             </div>
-        </button>
-            <div class="second">
-                <img style="padding-right: 5px;" src="icons\classes.svg" alt="">
-                <div class="range"> <b>4</b> Classes </div>
-
+            <div>
+                <select name="course" id="state" class="course_name cursor_pointer">
+                    <option value="alabama">Course Name</option>
+                    <option value="dave">Dave</option>
+                    <option value="pumpernickel">Pumpernickel</option>
+                    <option value="reeses">Reeses</option>
+                </select>
             </div>
-        </div>
-        <div class="outer_course">
-            <div class="left_c"> <span> Showing 4 of 4 courses </span></div>
-            <div class="show_course">
-                <div>
-                    <span>Sort By: </span>
-                </div>
-                <div>
-                    <select name="course" id="state" class="course_name cursor_pointer" >
-                        <option value="alabama">Course Name</option>
-                        <option value="dave">Dave</option>
-                        <option value="pumpernickel">Pumpernickel</option>
-                        <option value="reeses">Reeses</option>
-                    </select>
-                </div>
-                <div>
-                    <img src="icons\sort.svg" alt="">
-                </div>
+            <div>
+                <img src="icons\sort.svg" alt="">
             </div>
         </div>
-        <div class="middle">
-            <div class="obj">
-                <div class="ff">
-                    <div class="obj2">
-                        <img src="images\imageMask.png" alt="">
-                    </div>
-                    <div class="obj3">
-                          <b>Acceleration</b>
-                        <br>
-                        <span>
+    </div>
+    <div class="middle">
+        <div class="obj">
+            <div class="ff">
+                <div class="obj2">
+                    <img src="images\imageMask.png" alt="">
+                </div>
+                <div class="obj3">
+                    <b>Acceleration</b>
+                    <br>
+                    <span>
                         Physics |
                         Grade 7 <b style="color: #1f7a54;">+2</b></span>
-                        <br>
-                        <span><b>4</b> Units <b>18</b> Lessons <b>24</b> Topics</span>
-                        <br>
-                        <div class="obj4">
-                        <select name="course" id="state" class="course_name cursor_pointer" >
+                    <br>
+                    <span><b>4</b> Units <b>18</b> Lessons <b>24</b> Topics</span>
+                    <br>
+                    <div class="obj4">
+                        <select name="course" id="state" class="course_name cursor_pointer">
                             <option value="alabama">Mr. Frank's Class B</option>
                             <option value="dave">Dave</option>
                             <option value="pumpernickel">Pumpernickel</option>
                             <option value="reeses">Reeses</option>
                         </select>
-                        </div>
-                        <span>
+                    </div>
+                    <span>
                         50 Students |
                         21-Jan-2020 - 21-Aug-2020 </span>
-                    </div>
-                    <div class="obj5">
-                        <img src="icons\favourite.svg" alt="">
-                    </div>
                 </div>
-                <div>
-                    <hr>
-                </div>
-                <div class="ss">
-                    <img src="icons\preview.svg" alt="">
-                    <img src="icons\manage course.svg" alt="">
-                    <img src="icons\grade submissions.svg" alt="">
-                    <img src="icons\reports.svg" alt="">
+                <div class="obj5">
+                    <img src="icons\favourite.svg" alt="">
                 </div>
             </div>
-            <div class="obj">
-                <div class="ff">
-                    <div class="obj2">
-                        <img src="images\imageMask-1.png" alt="">
-                    </div>
-                    <div class="obj3">
-                          <b>Displacement, Velocity and Speed</b>
-                        <br>
-                        <span>
+            <div>
+                <hr>
+            </div>
+            <div class="ss">
+                <img src="icons\preview.svg" alt="">
+                <img src="icons\manage course.svg" alt="">
+                <img src="icons\grade submissions.svg" alt="">
+                <img src="icons\reports.svg" alt="">
+            </div>
+        </div>
+        <div class="obj">
+            <div class="ff">
+                <div class="obj2">
+                    <img src="images\imageMask-1.png" alt="">
+                </div>
+                <div class="obj3">
+                    <b>Displacement, Velocity and Speed</b>
+                    <br>
+                    <span>
                         Physics 2 |
                         Grade 6 <b style="color: #1f7a54;">+3</b></span>
-                        <br>
-                        <span><b>2</b> Units <b>15</b> Lessons <b>20</b> Topics</span>
-                        <br>
-                        <div class="obj4">
+                    <br>
+                    <span><b>2</b> Units <b>15</b> Lessons <b>20</b> Topics</span>
+                    <br>
+                    <div class="obj4">
                         <select name="course" id="state" class="course_name cursor_pointer" disabled>
                             <option value="alabama">No Classes</option>
                             <option value="dave">Dave</option>
                             <option value="pumpernickel">Pumpernickel</option>
                             <option value="reeses">Reeses</option>
                         </select>
-                        </div>
-                        <span>
-                         </span>
                     </div>
-                    <div class="obj5">
-                        <img src="icons\favourite.svg" alt="">
-                    </div>
+                    <span>
+                    </span>
                 </div>
-                <div>
-                    <hr>
-                </div>
-                <div class="ss">
-                    <img src="icons\preview.svg" alt="">
-                    <img class="disable" src="icons\manage course.svg" alt="">
-                    <img class="disable" src="icons\grade submissions.svg" alt="">
-                    <img src="icons\reports.svg" alt="">
+                <div class="obj5">
+                    <img src="icons\favourite.svg" alt="">
                 </div>
             </div>
+            <div>
+                <hr>
+            </div>
+            <div class="ss">
+                <img src="icons\preview.svg" alt="">
+                <img class="disable" src="icons\manage course.svg" alt="">
+                <img class="disable" src="icons\grade submissions.svg" alt="">
+                <img src="icons\reports.svg" alt="">
+            </div>
         </div>
-        <div class="middle">
-            <div class="obj">
-                <div class="ff">
-                    <div class="obj2">
-                        <img src="images\imageMask-3.png" alt="">
-                    </div>
-                    <div class="obj3">
-                          <b>Introduction to Biology: Micro organisms and how they aff..</b>
-                        <br>
-                        <span>
+    </div>
+    <div class="middle">
+        <div class="obj">
+            <div class="ff">
+                <div class="obj2">
+                    <img src="images\imageMask-3.png" alt="">
+                </div>
+                <div class="obj3">
+                    <b>Introduction to Biology: Micro organisms and how they aff..</b>
+                    <br>
+                    <span>
                         Biology |
                         Grade 4 <b style="color: #1f7a54;">+1</b></span>
-                        <br>
-                        <span><b>5</b> Units <b>16</b> Lessons <b>22</b> Topics</span>
-                        <br>
-                        <div class="obj4">
-                        <select name="course" id="state" class="course_name cursor_pointer" >
+                    <br>
+                    <span><b>5</b> Units <b>16</b> Lessons <b>22</b> Topics</span>
+                    <br>
+                    <div class="obj4">
+                        <select name="course" id="state" class="course_name cursor_pointer">
                             <option value="alabama">All Classes</option>
                             <option value="dave">Dave</option>
                             <option value="pumpernickel">Pumpernickel</option>
                             <option value="reeses">Reeses</option>
                         </select>
-                        </div>
-                        <span>
+                    </div>
+                    <span>
                         300 Students </span>
-                    </div>
-                    <div class="obj5">
-                        <img src="icons\favourite.svg" alt="">
-                    </div>
                 </div>
-                <div>
-                    <hr>
-                </div>
-                <div class="ss">
-                    <img src="icons\preview.svg" alt="">
-                    <img src="icons\manage course.svg" alt="">
-                    <img src="icons\grade submissions.svg" alt="">
-                    <img src="icons\reports.svg" alt="">
+                <div class="obj5">
+                    <img src="icons\favourite.svg" alt="">
                 </div>
             </div>
-            <div class="obj">
-                <div class="ff">
-                    
-                    <div class="obj2">
-                        <!-- <p class="expire">Expired</p> -->
-                        <img src="images\imageMask-2.png" alt="">
-                    </div>
-                    <div class="obj3">
-                          <b>Introduction to High School Mathematics</b>
-                        <br>
-                        <span>
-                            Mathematics |
+            <div>
+                <hr>
+            </div>
+            <div class="ss">
+                <img src="icons\preview.svg" alt="">
+                <img src="icons\manage course.svg" alt="">
+                <img src="icons\grade submissions.svg" alt="">
+                <img src="icons\reports.svg" alt="">
+            </div>
+        </div>
+        <div class="obj">
+            <div class="ff">
+
+                <div class="obj2">
+                    <!-- <p class="expire">Expired</p> -->
+                    <img src="images\imageMask-2.png" alt="">
+                </div>
+                <div class="obj3">
+                    <b>Introduction to High School Mathematics</b>
+                    <br>
+                    <span>
+                        Mathematics |
                         Grade 8 <b style="color: #1f7a54;">+3</b></span>
-                        <br>
-                       
-                        <div class="obj4">
-                        <select name="course" id="state" class="course_name cursor_pointer" >
+                    <br>
+
+                    <div class="obj4">
+                        <select name="course" id="state" class="course_name cursor_pointer">
                             <option value="alabama">Mr. Frank's Class A</option>
                             <option value="dave">Dave</option>
                             <option value="pumpernickel">Pumpernickel</option>
                             <option value="reeses">Reeses</option>
                         </select>
-                        </div>
-                        <span>
+                    </div>
+                    <span>
                         44 Students |
                         14-Oct-2019 - 20-Oct-2020 </span>
-                    </div>
-                    <div class="obj5">
-                        <img src="icons\favourite.svg" alt="">
-                    </div>
                 </div>
-                <div>
-                    <hr>
-                </div>
-                <div class="ss">
-                    <img src="icons\preview.svg" alt="">
-                    <img src="icons\manage course.svg" alt="">
-                    <img src="icons\grade submissions.svg" alt="">
-                    <img src="icons\reports.svg" alt="">
+                <div class="obj5">
+                    <img src="icons\favourite.svg" alt="">
                 </div>
             </div>
-        </div>
-        <div class="info">
-            <h4>About</h4>
-            <div class="vertical"></div>
-            <h4>Contact Us</h4>
+            <div>
+                <hr>
+            </div>
+            <div class="ss">
+                <img src="icons\preview.svg" alt="">
+                <img src="icons\manage course.svg" alt="">
+                <img src="icons\grade submissions.svg" alt="">
+                <img src="icons\reports.svg" alt="">
+            </div>
         </div>
     </div>
+    </div>
     <footer>
-        <img src="quantum screen assets\icons\logo used in footer.svg" alt="">
-        <div class="vertical"></div>
-        <div class="right">
-            <span>Copyright &copy; 2020-2021 Zeus Systems Pvt. Ltd. All rights reserved.</span>
+
+        <div class="info">
+            <div class="about">About</div>
+            <div class="line">|</div>
+            <div class="contact">Contact Us</div>
+        </div>
+        <div class="below">
+            <div>
+                <img src="quantum screen assets\icons\logo used in footer.svg" alt="">
+            </div>
+            <div>
+                |
+            </div>
+            <div class="copy">
+                Copyright &copy; 2020-2021
+            </div>
+            <div class="systems"> Zeus Systems Pvt. Ltd. </div>
+            <div class="rights">
+                All rights reserved.
+            </div>
         </div>
     </footer>
+
 </body>
 
 </html>
