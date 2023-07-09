@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   font-family: "Quicksand", sans-serif;
- 
 }
 
 body {
@@ -179,7 +178,6 @@ header {
       opacity: 1;
     }
   }
-  
 }
 
 .container {
@@ -198,6 +196,7 @@ header {
     padding: 1% 0;
     display: flex;
     flex-direction: row;
+    
   }
 }
 
@@ -260,6 +259,20 @@ header {
     background: #ffffff 0% 0% no-repeat padding-box;
     border-radius: 2px;
     opacity: 1;
+    .expired{
+        background: #ffe4e6 0% 0% no-repeat padding-box;
+        border-radius: 2px;
+        opacity: 1;
+        text-align: left;
+        font: normal normal normal 10px/16px Museo Sans 500;
+        letter-spacing: 0px;
+        color: #d80000;
+        opacity: 1;
+        width: 20%;
+      }
+      .ff{
+        margin: 2% 5%;
+      }
   }
 }
 
