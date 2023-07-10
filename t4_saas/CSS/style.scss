@@ -167,12 +167,12 @@ header {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: centr;
     justify-content: center;
     align-items: center;
     .obj {
       width: 100%;
-      margin: 0 2.5%;
+      // margin: 25% 2.5% !important;
       background: #ffffff 0% 0% no-repeat padding-box;
       border-radius: 2px;
       opacity: 1;
@@ -249,12 +249,12 @@ header {
 
 .middle {
   width: 95%;
-  margin: 2% 2.5%;
+  margin: 0% 2.5%;
   display: flex;
   flex-direction: row;
   .obj {
     width: 100%;
-    margin: 0 2.5%;
+    margin: 3% 2.5%;
     background: #ffffff 0% 0% no-repeat padding-box;
     border-radius: 2px;
     opacity: 1;
@@ -342,7 +342,9 @@ header {
       margin: 2%;
       width: 100%;
       img {
-        margin: 0 10%;
+        margin: 0 8%;
+        width: 4%;
+        height: 4%;
       }
     }
     .exp {

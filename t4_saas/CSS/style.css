@@ -156,13 +156,12 @@ header .header-right a .profile {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: centr;
     justify-content: center;
     align-items: center;
   }
   .middle .obj {
     width: 100%;
-    margin: 0 2.5%;
     background: #ffffff 0% 0% no-repeat padding-box;
     border-radius: 2px;
     opacity: 1;
@@ -237,13 +236,13 @@ header .header-right a .profile {
 
 .middle {
   width: 95%;
-  margin: 2% 2.5%;
+  margin: 0% 2.5%;
   display: flex;
   flex-direction: row;
 }
 .middle .obj {
   width: 100%;
-  margin: 0 2.5%;
+  margin: 3% 2.5%;
   background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 2px;
   opacity: 1;
@@ -330,7 +329,9 @@ header .header-right a .profile {
   width: 100%;
 }
 .middle .obj .ss img {
-  margin: 0 10%;
+  margin: 0 8%;
+  width: 4%;
+  height: 4%;
 }
 .middle .obj .exp {
   background: #ffe4e6 0% 0% no-repeat padding-box;
