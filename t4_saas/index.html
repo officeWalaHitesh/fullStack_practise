@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teacher Dashboard</title>
     <link rel="stylesheet" href="CSS\style.css">
+
 </head>
 
 <body>
@@ -21,13 +22,13 @@
             <a class="content sm" href="admin">admin</a>
 
             <a href="#" class="notification">
-                <span><img src="icons\alerts.svg" alt=""></span>
-                <span class="badge">2</span>
+                <span><img onmouseenter="bell()" src="icons\alerts.svg" alt=""></span>
+                <span class="badge badge-bell">2</span>
             </a>
 
             <a href="#" class="notification_icon">
-                <span><img src="icons\announcements.svg" alt=""></span>
-                <span class="badge">1</span>
+                <span><img onmouseenter="start()" src="icons\announcements.svg" alt=""></span>
+                <span class="badge badge-icon">1</span>
             </a>
 
             <div>
@@ -37,10 +38,268 @@
                 </a>
             </div>
             <div class="hamburger">
-                <img src="icons/hamburger-menu.svg" alt="hamburger">
+                <img id="ham" src="icons/hamburger-menu.svg" alt="hamburger" onmouseenter="options()">
             </div>
         </div>
     </header>
+    <div class="head-options">
+        <div>DASHBOARD</div>
+
+        <div class="inner-box">
+            <div>CONTENT <i class="arrow up space"></i></div>
+
+            <div class="catalog">
+                COURSE CATALOG
+            </div>
+        </div>
+        <div>
+            USERS
+            <i class="arrow down space"></i>
+        </div>
+        <div class="reports">
+            REPORTS
+            <i class="arrow down space"></i>
+        </div>
+        <div class="admin">
+            ADMINS
+            <i class="arrow down space"></i>
+        </div>
+
+
+    </div>
+    <div class="notify">
+        <div class="sub-not">
+            <div class="name">
+                <div>PA:</div>
+                <div class="full-name">Wilson Kumar</div>
+                <div class="check-icon">
+                    <img src="icons\checkbox-checked.svg" alt="">
+                </div>
+            </div>
+            <div class="assign-class">No classes will be held on 21st Nov</div>
+            <div class="attach">
+                <div class="attach-ff">
+                    2 files are attached
+                </div>
+                <div class="date">
+                    15-Sep-2018 at 07:21 pm
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="sub-not">
+            <div class="name">
+                <div>PA:</div>
+                <div class="full-name">Samson White</div>
+                <div class="check-icon">
+                    <img src="icons\checkbox-checked.svg" alt="">
+                </div>
+            </div>
+            <div class="assign-class">Guest lecture on Geometry on 20th September</div>
+            <div class="attach">
+                <div class="attach-ff">
+                    2 files are attached
+                </div>
+                <div class="date">
+                    15-Sep-2018 at 07:21 pm
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="sub-not">
+            <div class="name">
+                <div>PA:</div>
+                <div class="full-name">Wilson Kumar</div>
+                <div class="check-icon">
+                    <img src="icons\checkbox-checked.svg" alt="">
+                </div>
+            </div>
+            <div class="assign-class">Additional course materials available on request</div>
+            <div class="attach">
+                <div class="attach-ff">
+                    Course: Mathematics 101
+                </div>
+                <div class="date">
+                    15-Sep-2018 at 07:21 pm
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="sub-not">
+            <div class="name">
+                <div>PA:</div>
+                <div class="full-name">Wilson Kumar</div>
+                <div class="check-icon">
+                    <img src="icons\checkbox-checked.svg" alt="">
+                </div>
+            </div>
+            <div class="assign-class">No classes will be held on 25th Dec</div>
+            <div class="attach">
+                <div class="attach-ff">
+
+                </div>
+                <div class="date">
+                    15-Sep-2018 at 07:21 pm
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="sub-not">
+            <div class="name">
+                <div>PA:</div>
+                <div class="full-name">Wilson Kumar</div>
+                <div class="check-icon">
+                    <img src="icons\checkbox-checked.svg" alt="">
+                </div>
+            </div>
+            <div class="assign-class">Additional course materials available on request</div>
+            <div class="attach">
+                <div class="attach-ff">
+                    2 files are attached
+                </div>
+                <div class="date">
+                    15-Sep-2018 at 07:21 pm
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="final-not">
+            <div>SHOW ALL</div> |
+            <div>CREATE NEW</div>
+        </div>
+    </div>
+    <div class="bell-icon">
+        <div class="topic">
+            <div class="sub">
+                <div class="sub-info">
+                    License for Introduction to Algebra has been assigned to your school
+                </div> 
+                <div class="sub-img">
+                    <img src="icons\checkbox-checked.svg" alt="">
+                </div>
+            </div>
+            <div class="cours">
+
+            </div>
+            <div class="bell-date">
+                15-Sep-2018 at 07:21 pm
+            </div>
+        </div>
+        <hr>
+        <div class="topic">
+            <div class="sub">
+                <div class="sub-info">
+                    Lesson 3 Practice Worksheet overdue for Amy Santiago
+                </div> 
+                <div class="sub-img">
+                    <img src="icons\checkbox-checked.svg" alt="">
+                </div>
+            </div>
+            <div class="cours">
+                <div class="cours-name">
+                    Course:
+                </div>
+                <div>Advanced Mathematics </div> 
+            </div>
+            <div class="bell-date">
+                15-Sep-2018 at 05:21 pm
+            </div>
+        </div>
+        <hr>
+        <div class="topic">
+            <div class="sub">
+                <div class="sub-info">
+                    23 new students created
+                </div> 
+                <div class="sub-img">
+                    <img src="icons\checkbox-checked.svg" alt="">
+                </div>
+            </div>
+            <div class="cours">
+                <div class="cours-name">
+                    <!-- Course: -->
+                </div>
+                <div>
+                    <!-- Advanced Mathematics -->
+                 </div> 
+            </div>
+            <div class="bell-date">
+                14-Sep-2018 at 01:21 pm
+            </div>
+        </div>
+        <hr>
+        <div class="topic">
+            <div class="sub">
+                <div class="sub-info">
+                    15 submissions ready for evaluation
+                </div> 
+                <div class="sub-img">
+                    <img src="icons\checkbox-checked.svg" alt="">
+                </div>
+            </div>
+            <div class="cours">
+                <div class="cours-name">
+                    Class:
+                </div>
+                <div> Basics of Algebra</div> 
+            </div>
+            <div class="bell-date">
+                13-Sep-2018 at 01:15 pm
+            </div>
+        </div>
+        <hr>
+        <div class="topic">
+            <div class="sub">
+                <div class="sub-info">
+                    License for Basic Concepts in Geometry has been assigned to your... school
+                </div> 
+                <div class="sub-img">
+                    <img src="icons\checkbox-checked.svg" alt="">
+                </div>
+            </div>
+            <div class="cours">
+                <div class="cours-name">
+                    <!-- Course: -->
+                </div>
+                <div>
+                    <!-- Advanced Mathematics  -->
+                </div> 
+            </div>
+            <div class="bell-date">
+                15-Sep-2018 at 07:21 pm
+            </div>
+        </div>
+        <hr>
+        <div class="topic">
+            <div class="sub">
+                <div class="sub-info">
+                    Lesson 3 Practice Worksheet overdue for Sam Diego
+                </div> 
+                <div class="sub-img">
+                    <img src="icons\checkbox-checked.svg" alt="">
+                </div>
+            </div>
+            <div class="cours">
+                <div class="cours-name">
+                    Course:
+                </div>
+                <div>Advanced Mathematics </div> 
+            </div>
+            <div class="bell-date">
+                <!-- 15-Sep-2018 at 05:21 pm -->
+            </div>
+        </div>
+        <hr>
+       
+        <div class="bell-not">
+            <div>SHOW ALL</div> |
+        </div>
+    </div>
     <div class="container">
         <div class="course">
             <img style="padding-right: 5px;" src="icons\courses.svg" alt="">
@@ -143,7 +402,7 @@
                     <div class="stud">
                         <!-- 50 Students |
                         21-Jan-2020 - 21-Aug-2020 -->
-                     </div>
+                    </div>
                 </div>
                 <div class="obj5">
                     <img src="icons\favourite.svg" alt="">
@@ -170,7 +429,8 @@
                     <img src="images/imageMask-3.png" alt="">
                 </div>
                 <div class="obj3">
-                    <div class="card-name"> Introduction to Biology: Micro organisms and how they affect the other Life Systems in En...
+                    <div class="card-name"> Introduction to Biology: Micro organisms and how they affect the other Life
+                        Systems in En...
 
                     </div>
                     <div class="sub-name">
@@ -189,9 +449,9 @@
                         </select>
                     </div>
                     <div class="stud">
-                        300 Students 
+                        300 Students
                         <!-- 21-Jan-2020 - 21-Aug-2020 -->
-                     </div>
+                    </div>
                 </div>
                 <div class="obj5">
                     <img src="icons\favourite.svg" alt="">
@@ -251,7 +511,7 @@
             </div>
         </div>
     </div>
-    
+
     <footer>
 
         <div class="info">
@@ -275,7 +535,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
