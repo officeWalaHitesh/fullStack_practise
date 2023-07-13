@@ -139,11 +139,236 @@ header {
   }
 }
 
-.head-options {
+.head-options  ,.bell-icon {
   display: none;
 }
 
+.notify {
+  .sub-not {
+    background: #ffffee 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin: 0 2%;
+    .name {
+      text-align: left;
+      font: normal normal medium 12px/16px Quicksand;
+      letter-spacing: 0px;
+      color: #6e6e6e;
+      display: flex;
+      flex-direction: row;
+      padding: 1%;
+      .check-icon {
+        display: inline-block;
+        margin-left: 20%;
+      }
+      .full-name {
+        color: #222222;
+      }
+    }
+    .assign-class {
+      text-align: left;
+      font: normal normal medium 14px/18px Quicksand;
+      letter-spacing: 0px;
+      color: #222222;
+      opacity: 1;
+      margin: 1%;
+    }
+    .attach {
+      text-align: right;
+      font: normal normal medium 12px/18px Quicksand;
+      letter-spacing: 0px;
+      color: #6e6e6e;
+      opacity: 1;
+      display: flex;
+      flex-direction: row;
+      padding: 1%;
+      .attach-ff {
+        width: 40%;
+        // margin-right: 5%;
+        justify-content: left;
+        align-items: flex-start;
+        text-align: left;
+      }
+      .date {
+        width: 55%;
+        margin-left: 5%;
+      }
+    }
+  }
+  .final-not {
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 6px #0000003d;
+    border-radius: 0px 0px 2px 2px;
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    div {
+      padding: 1%;
+      margin: 0 10%;
+      text-align: center;
+      font: normal normal medium 14px/18px Quicksand;
+      letter-spacing: -0.35px;
+      color: #1f7a54;
+      opacity: 1;
+    }
+  }
+  display: none;
+  // background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  // background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 13px 20px #0000003d !important;
+  border-radius: 2px;
+  opacity: 1;
+  width: 30%;
+  font-size: small;
+  // justify-content: right;
+  text-align: left;
+  margin-left: 65%;
+  margin-right: 5%;
+  position: absolute;
+  z-index: 8;
+  // -webkit-animation: cssAnimation 5s forwards;
+
+  @keyframes cssAnimation {
+    0% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes cssAnimation {
+    0% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+.bell-icon {
+  .topic {
+    background: #ffffee 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin: 0 2%;
+    .sub {
+      padding: 1%;
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+      font: normal normal medium 14px/18px Quicksand;
+      letter-spacing: 0px;
+      color: #222222;
+      opacity: 1;
+      .sub-info{
+        width: 90%;
+      }
+      .sub-img{
+        width: 15%;
+        img {
+          margin-left: 10%;
+          text-align: left;
+          padding: 0 1%;
+          font: normal normal normal 18px/18px Material-Design-Iconic-Font;
+          letter-spacing: 0px;
+          color: #1f7a54;
+          opacity: 1;
+        }
+      }    
+    }
+    .cours{
+      text-align: left;
+font: normal normal medium 12px/16px Quicksand;
+letter-spacing: 0px;
+color: #222222;
+display: flex;
+flex-direction: row;
+      .cours-name{
+        color: #6E6E6E;
+      }
+    }
+    .bell-date {
+      padding: 1%;
+      text-align: right;
+      font: normal normal medium 12px/14px Quicksand;
+      letter-spacing: 0px;
+      color: #6e6e6e;
+      opacity: 1;
+    }
+  }
+  .bell-not{
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 1px 6px #0000003D;
+border-radius: 0px 0px 2px 2px;
+opacity: 1;
+    div{
+      text-align: center;
+      padding: 1%;
+font: normal normal medium 14px/18px Quicksand;
+letter-spacing: -0.35px;
+color: #1F7A54;
+opacity: 1;
+    }
+  }
+  display: none;
+  // background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 13px 20px #0000003d !important;
+  border-radius: 2px;
+  opacity: 1;
+  width: 35%;
+  font-size: small;
+  // justify-content: right;
+  text-align: left;
+  margin-left: 63%;
+  margin-right: 5%;
+  position: absolute;
+  z-index: 8;
+  // -webkit-animation: cssAnimation 5s forwards;
+
+  @keyframes cssAnimation {
+    0% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes cssAnimation {
+    0% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
 @media only screen and (max-width: 750px) {
+
+  .notify{
+    width: 50% ;
+    margin-left: 30%;
+  }
+
+  .bell-icon{
+    width: 50% ;
+    margin-left: 30%;
+  }
+
   header {
     .logo {
       width: 20%;
@@ -258,214 +483,9 @@ header {
     }
   }
 
-  .notify {
-    .sub-not {
-      background: #ffffee 0% 0% no-repeat padding-box;
-      opacity: 1;
-      .name {
-        text-align: left;
-        font: normal normal medium 12px/16px Quicksand;
-        letter-spacing: 0px;
-        color: #6e6e6e;
-        display: flex;
-        flex-direction: row;
-        padding: 1%;
-        .check-icon {
-          display: inline-block;
-          margin-left: 20%;
-        }
-        .full-name {
-          color: #222222;
-        }
-      }
-      .assign-class {
-        text-align: left;
-        font: normal normal medium 14px/18px Quicksand;
-        letter-spacing: 0px;
-        color: #222222;
-        opacity: 1;
-        margin: 1%;
-      }
-      .attach {
-        text-align: right;
-        font: normal normal medium 12px/18px Quicksand;
-        letter-spacing: 0px;
-        color: #6e6e6e;
-        opacity: 1;
-        display: flex;
-        flex-direction: row;
-        padding: 1%;
-        .attach-ff {
-          width: 40%;
-          // margin-right: 5%;
-          justify-content: left;
-          align-items: flex-start;
-          text-align: left;
-        }
-        .date {
-          width: 55%;
-          margin-left: 5%;
-        }
-      }
-    }
-    .final-not {
-      background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-      background: #ffffff 0% 0% no-repeat padding-box;
-      box-shadow: 0px 1px 6px #0000003d;
-      border-radius: 0px 0px 2px 2px;
-      opacity: 1;
-      display: flex;
-      flex-direction: row;
-      div {
-        padding: 1%;
-        margin: 0 10%;
-        text-align: center;
-        font: normal normal medium 14px/18px Quicksand;
-        letter-spacing: -0.35px;
-        color: #1f7a54;
-        opacity: 1;
-      }
-    }
-    display: none;
-    // background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-    // background: #ffffff 0% 0% no-repeat padding-box;
-    box-shadow: 0px 13px 20px #0000003d !important;
-    border-radius: 2px;
-    opacity: 1;
-    width: 50%;
-    font-size: small;
-    // justify-content: right;
-    text-align: left;
-    margin-left: 33%;
-    position: absolute;
-    z-index: 8;
-    // -webkit-animation: cssAnimation 5s forwards;
+ 
 
-    @keyframes cssAnimation {
-      0% {
-        opacity: 1;
-      }
-      90% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-      }
-    }
-    @-webkit-keyframes cssAnimation {
-      0% {
-        opacity: 0;
-      }
-      90% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-      }
-    }
-  }
-
-  .bell-icon {
-    .topic {
-      background: #ffffee 0% 0% no-repeat padding-box;
-      opacity: 1;
-      .sub {
-        padding: 1%;
-        display: flex;
-        flex-direction: row;
-        text-align: left;
-        font: normal normal medium 14px/18px Quicksand;
-        letter-spacing: 0px;
-        color: #222222;
-        opacity: 1;
-        .sub-info{
-          width: 90%;
-        }
-        .sub-img{
-          width: 10%;
-          img {
-            margin-left: 10%;
-            text-align: left;
-            font: normal normal normal 18px/18px Material-Design-Iconic-Font;
-            letter-spacing: 0px;
-            color: #1f7a54;
-            opacity: 1;
-          }
-        }    
-      }
-      .cours{
-        text-align: left;
-font: normal normal medium 12px/16px Quicksand;
-letter-spacing: 0px;
-color: #222222;
-display: flex;
-flex-direction: row;
-        .cours-name{
-          color: #6E6E6E;
-        }
-      }
-      .bell-date {
-        padding: 1%;
-        text-align: right;
-        font: normal normal medium 12px/14px Quicksand;
-        letter-spacing: 0px;
-        color: #6e6e6e;
-        opacity: 1;
-      }
-    }
-    .bell-not{
-      background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-background: #FFFFFF 0% 0% no-repeat padding-box;
-box-shadow: 0px 1px 6px #0000003D;
-border-radius: 0px 0px 2px 2px;
-opacity: 1;
-      div{
-        text-align: center;
-        padding: 1%;
-font: normal normal medium 14px/18px Quicksand;
-letter-spacing: -0.35px;
-color: #1F7A54;
-opacity: 1;
-      }
-    }
-    display: none;
-    // background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-    background: #ffffff 0% 0% no-repeat padding-box;
-    box-shadow: 0px 13px 20px #0000003d !important;
-    border-radius: 2px;
-    opacity: 1;
-    width: 50%;
-    font-size: small;
-    // justify-content: right;
-    text-align: left;
-    margin-left: 25%;
-    position: absolute;
-    z-index: 8;
-    // -webkit-animation: cssAnimation 5s forwards;
-
-    @keyframes cssAnimation {
-      0% {
-        opacity: 1;
-      }
-      90% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-      }
-    }
-    @-webkit-keyframes cssAnimation {
-      0% {
-        opacity: 0;
-      }
-      90% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-      }
-    }
-  }
+  
 
   .sm {
     display: none;
@@ -509,7 +529,7 @@ opacity: 1;
 }
 
 .outer_course {
-  margin: 3% 5%;
+  margin: 0% 5%;
   display: flex;
   flex-direction: row;
   width: 90%;
