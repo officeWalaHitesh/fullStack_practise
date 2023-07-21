@@ -1,23 +1,9 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
-        "moduleResolution": "node",
-        // "target": "es2017",
-        // "lib": ["es2017"],
-        "strict": true,
-        "sourceMap": true,
-        "noEmitOnError": true,
-        "baseUrl": ".",
+        "module": "ES6",
+        "moduleResolution": "node",    
         "resolveJsonModule": true,
         "esModuleInterop": true,
-        "outDir": "out"
     },
     "files": ["./tp.ts"]
  }
-
-//   {
-//     "include": ["src/**/*.json"],
-//     "compilerOptions": {
-//       "resolveJsonModule": true
-//     }
-//   }
