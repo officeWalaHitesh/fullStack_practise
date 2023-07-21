@@ -1,10 +1,10 @@
-import boxes from "./dashboard.json";
+import * as data from './dashboard.json';
 
 // const boxes = require('./dashboard.json');
 
 // use tsc filename.ts to compile
 
-console.log(boxes);
+console.log(1);
 
 export function options() {
 

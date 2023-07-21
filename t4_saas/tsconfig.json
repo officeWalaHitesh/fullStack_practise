@@ -1,9 +1,9 @@
 {
     "compilerOptions": {
-        // "module": "commonjs",
-        // "moduleResolution": "node",    
         "resolveJsonModule": true,
-        "esModuleInterop": true,
-    },
-    "files": ["./tp.ts"]
+        "target": "es6",
+        "module": "commonjs",
+        "outDir": "dist",
+        "strict": true
+      }
  }
