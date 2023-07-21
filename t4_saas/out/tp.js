@@ -1,7 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 exports.__esModule = true;
 exports.bell = exports.start = exports.options = void 0;
-var dashboard_json_1 = require("./dashboard.json");
+var dashboard_json_1 = __importDefault(require("./dashboard.json"));
 // use tsc filename.ts to compile
 console.log(dashboard_json_1["default"]);
 function options() {
@@ -76,3 +79,4 @@ function bell() {
     }, 6000);
 }
 exports.bell = bell;
+//# sourceMappingURL=tp.js.map

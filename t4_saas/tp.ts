@@ -1,3 +1,9 @@
+import boxes from "./dashboard.json";
+
+// use tsc filename.ts to compile
+
+console.log(boxes);
+
 export function options() {
 
     const elems = document.getElementsByClassName('head-options');
@@ -25,6 +31,8 @@ export function options() {
 export function start(): void {
 
     const elems = document.getElementsByClassName('notify');
+
+    
 
     const ham = document.getElementsByClassName('notification_icon');
 
