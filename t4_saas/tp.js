@@ -2,6 +2,7 @@
 exports.__esModule = true;
 exports.bell = exports.start = exports.options = void 0;
 var dashboard_json_1 = require("./dashboard.json");
+// const boxes = require('./dashboard.json');
 // use tsc filename.ts to compile
 console.log(dashboard_json_1["default"]);
 function options() {

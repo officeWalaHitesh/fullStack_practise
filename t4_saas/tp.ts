@@ -1,5 +1,7 @@
 import boxes from "./dashboard.json";
 
+// const boxes = require('./dashboard.json');
+
 // use tsc filename.ts to compile
 
 console.log(boxes);
